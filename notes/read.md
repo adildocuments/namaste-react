@@ -6,4 +6,7 @@
 # babel
 # find various tag in jsx
 # hmr parcel
+# diff algorithm
+# reconcilition 
+# virtual dom
 # ------------------------------------------------
