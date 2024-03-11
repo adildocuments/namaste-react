@@ -1,5 +1,10 @@
-import {LOGO_URL} from '../../utils/constants';
-const Header = () =>{
+import {LOGO_URL} from '../utils/constants';
+import {useState} from 'react';
+
+const Header = () => {
+    const [btnName, setBtnName] = useState('Login');
+    // let btnName = 'Login';
+    console.log('header-render')
     return (
         <>
             <div className='header'>
@@ -10,6 +15,10 @@ const Header = () =>{
                         <li>About Us</li>
                         <li>Contact Us</li>
                         <li>Cart</li>
+                        <li><button className='btn-login' onClick={()=>{
+                            // btnName = 'Logout';
+                            (btnName === 'Login')?setBtnName('Logout'):setBtnName('Login');
+                        }}>{btnName}</button></li>
                     </ul>
                 </div>
 

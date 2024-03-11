@@ -7,6 +7,7 @@
 # find various tag in jsx
 # hmr parcel
 # diff algorithm
-# reconcilition 
+# reconcilition (React Fibre)
 # virtual dom
+# config driven ui
 # ------------------------------------------------

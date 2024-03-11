@@ -1,8 +1,8 @@
 import { FcRating } from "react-icons/fc";
-import {IMAGE_URL} from '../../utils/constants';
+import {IMAGE_URL} from '../utils/constants';
 const Card = (props) => {
-    const resData = props.restList;
-    const {cuisines, name, cloudinaryImageId, areaName, id, avgRating, sla:{deliveryTime} } = resData.info;
+    const {restList} = props;
+    const {cuisines, name, cloudinaryImageId, areaName, id, avgRating, sla:{deliveryTime} } = restList?.info;
     return (
         <>
             <div className='card'>
