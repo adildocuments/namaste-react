@@ -1,10 +1,8 @@
 import Card from './Card';
-import {restaurants} from '../utils/data.js';
 import {useEffect, useState} from 'react';
-import {restaurants} from '../utils/data'
 import axios from 'axios';
 import { SWIGGY_URL } from '../utils/constants.js';
-import Shimmer  from './Shimmer.js';
+import Shimmer  from './Shimmer';
 
 
 const Body = () => {
@@ -12,25 +10,33 @@ const Body = () => {
     const [listOfRestaurent, setListOfRestaurent] = useState([]);
     const [filteredRes, setFilteredRes] = useState([])
     const [searchText, setSearchText] = useState("");
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     fetchRestaurent = async () => {
         try {
             const res = await axios.get(SWIGGY_URL);
+            console.log(res);
             setListOfRestaurent(res.data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
             setFilteredRes(res.data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         }catch(error){
             console.log(error);
         }
     }
+    const handleScroll = (event) => {
+        const currentPosition = event.target.scrollTop;
+        setScrollPosition(currentPosition);
+    }
     useEffect(()=>{
+        console.log('body use effect')
         fetchRestaurent();
     }, [])
 
+    console.log('body')
     // if(listOfRestaurent.length === 0) {
     //     return <Shimmer/>
     // }
 
-    return (listOfRestaurent.length === 0) ? <Shimmer/>:
+    return (listOfRestaurent?.length === 0) ? <Shimmer/>:
     (
         <>
             <div className='body'>
@@ -40,20 +46,20 @@ const Body = () => {
                             setSearchText(e.target.value)
                         }} className='search-input' value={searchText} />
                         <button className='btn-search' onClick={()=>{
-                            const filterdList = listOfRestaurent.filter(res=>res.info?.name.toLowerCase().includes(searchText.toLowerCase()))
+                            const filterdList = listOfRestaurent?.filter(res=>res.info?.name.toLowerCase().includes(searchText.toLowerCase()))
                             setFilteredRes(filterdList)
                         }}>Search</button>
                     </div>
                     <div>
                     <button className='rated-btn' onClick={()=>{
-                        const filterdList = listOfRestaurent.filter(res=>res.info.avgRating>=4)
+                        const filterdList = listOfRestaurent?.filter(res=>res.info.avgRating>=4)
                         setFilteredRes(filterdList)
                    }}>Top Rated Restaurent</button>
                     </div>
                 </div>
                 <div className='cards-container'>
                     {
-                        filteredRes.map((restaurant)=>{
+                        filteredRes?.map((restaurant)=>{
                             return <Card key={restaurant.info.id} restList = {restaurant}/>
                         })
                     }                   

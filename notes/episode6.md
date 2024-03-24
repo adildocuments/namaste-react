@@ -93,3 +93,6 @@ whenever state varibale change using state variable function react will re rende
 
 ### why react is so fast?
 - virtual dom does not making it fast. react fiber (the new reconcilition algorithm) which finds out the differance between two virual dom and updatdes the dom only what portion is required for updating that's why react is fast.
+
+
+### we have created the search functionality 

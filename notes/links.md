@@ -1,1 +1,4 @@
 - https://axios-http.com/docs/intro
+- proxycors.io
+- reactrouter.com
+- https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
