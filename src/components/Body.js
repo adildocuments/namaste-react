@@ -3,6 +3,8 @@ import {useEffect, useState} from 'react';
 import axios from 'axios';
 import { SWIGGY_URL } from '../utils/constants.js';
 import Shimmer  from './Shimmer';
+import { Link } from 'react-router-dom';
+import useStatusOnline from '../utils/useStatusOnine.js';
 
 
 const Body = () => {
@@ -35,6 +37,10 @@ const Body = () => {
     // if(listOfRestaurent.length === 0) {
     //     return <Shimmer/>
     // }
+    const onlineStatus = useStatusOnline();
+    if(onlineStatus === false) {
+        return <h1>Please check your internet connection!</h1>
+    }
 
     return (listOfRestaurent?.length === 0) ? <Shimmer/>:
     (
@@ -60,7 +66,7 @@ const Body = () => {
                 <div className='cards-container'>
                     {
                         filteredRes?.map((restaurant)=>{
-                            return <Card key={restaurant.info.id} restList = {restaurant}/>
+                            return <Link to={"/restaurant-menu/"+restaurant.info.id} key={restaurant.info.id}> <Card  restList = {restaurant}/></Link>
                         })
                     }                   
                 </div>

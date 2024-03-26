@@ -87,3 +87,7 @@
 # need to read browserlist website
 # what type ="module" in JavaScript?
 # - Module allow us to break up our code into seprate files and give the ability to import and export the file.
+
+bundler:- bunlder is the tool that takes all your Javascript code, along with any other assets like css or images and combines them into a single file (or few files) that can be served to the browser.
+
+bunlder:- takes all your files and make these into one file.

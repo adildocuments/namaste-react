@@ -10,4 +10,13 @@
 # reconcilition (React Fibre)
 # virtual dom
 # config driven ui
+# linters
+# sass
+# scss
+# styled component
+# chakra ui
+# shacdn ui
+# radix ui
+# mui 
+# tailwind  - postCss
 # ------------------------------------------------

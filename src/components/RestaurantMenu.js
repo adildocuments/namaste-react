@@ -1,7 +1,4 @@
 import {useParams} from 'react-router-dom';
-import axios from 'axios';
-import {useEffect, useState} from 'react';
-import {SWIGGY_MENU_URL} from '../utils/constants.js';
 import Shimmer from './Shimmer.js';
 
 
@@ -19,72 +16,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Divider from '@mui/material/Divider';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
+import useRestaurentCard from '../utils/useRestaurentCard.js';
 
-
-
-
-// const RestaurantMenu = () => {
-//     const {restId} = useParams();
-//     const [menu, setMenu] = useState([]);
-
-//     useEffect(()=>{
-//         fetchMenu();
-//     }, []);
-    
-//     const fetchMenu = async () => {
-//         try {
-//             const menuData = await axios.get(SWIGGY_MENU_URL+restId);
-//             console.log(menuData);
-
-//             setMenu(menuData)
-//         } catch(error){
-//             console.log('Error:- ', error);
-//         }
-//     }
-//     if (menu?.length === 0) {
-//         return (
-//             <Shimmer/>
-//         )
-//     }
-//     const {name, costForTwo, cuisines} = menu?.data?.data?.cards[0]?.card?.card?.info;
-//     const {itemCards} = menu?.data?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
-
-//     console.log(itemCards);
-//     return (
-//         <>
-//             <h2>{name}</h2>
-//             <h2>{cuisines.join(", ")+' '+'₹'+costForTwo/100}</h2>
-//             {/* <ul> */}
-//             {
-//                 itemCards?.map((card)=>{
-//                    return <li key={card?.card?.info?.id}>{card?.card?.info?.name}-₹{card?.card?.info?.price/100 || card?.card?.info?.defaultPrice/100}</li>
-//                 })
-//             }
-//             {/* </ul> */}
-            
-//         </>
-//     )
-// }
 
 
 const RestaurantMenu = () =>{
     const {restId} = useParams();
-    const [menu, setMenu] = useState([]);
+    const menu = useRestaurentCard(restId);
 
-    useEffect(()=>{
-        fetchMenu();
-    }, []);
-
-        const fetchMenu = async () => {
-        try {
-            const menuData = await axios.get(SWIGGY_MENU_URL+restId);
-            console.log(menuData);
-
-            setMenu(menuData)
-        } catch(error){
-            console.log('Error:- ', error);
-        }
-    }
     if (menu?.length === 0) {
         return (
             <Shimmer/>
@@ -99,11 +38,9 @@ const RestaurantMenu = () =>{
         <Container sx={{margin:'20px auto', width:'90%'}}>
                 <Box sx={{ bgcolor: '#f0f0f0', height: '100vh'}}> 
                 {
-                   cards?.filter((curEle)=>{
-                        return curEle != 0
-                   }).map((obj)=>{
-                    return <Accordion defaultExpanded>
-                        <AccordionSummary
+                   cards?.map((obj)=>{
+                    return <Accordion defaultExpanded > 
+                        <AccordionSummary key={obj?.card?.card?.id} 
                                 expandIcon={<ExpandMoreIcon/>}
                                 aria-controls="panel1-content"
                                 id="panel1-header">
@@ -112,7 +49,7 @@ const RestaurantMenu = () =>{
                         <AccordionDetails>
                             {
                                 itemCards?.map((obj)=>{
-                                    return <Card sx={{display:'flex', justifyContent:'space-between'}}>
+                                    return <Card key={obj?.card?.info?.id} sx={{display:'flex', justifyContent:'space-between'}}>
                                         <CardContent sx={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                                             <Typography sx={{fontSize:'10px'}}> 
                                                 {obj?.card?.info?.name}
