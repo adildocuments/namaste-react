@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T11:10:09.483Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="50uH7zfO_s_Ep29Wtle8" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-07T11:10:27.727Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="cNao-pi03E-NCYGnrt0G" version="24.0.1" type="github">
   <diagram name="Page-1" id="4GQaYxwLXLBL1G1ahxAC">
     <mxGraphModel dx="810" dy="1547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -190,6 +190,9 @@
             <mxPoint x="611" y="699.5" as="sourcePoint" />
             <mxPoint x="441" y="699.5" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-58" value="updated cart&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="135" y="653" width="90" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
