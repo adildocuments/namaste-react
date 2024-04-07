@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T10:05:28.563Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="hrwDkKVdUpl6tD-E-GZm" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-07T10:11:17.484Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="GFhpPW-LRuckIx4YnuQS" version="24.0.1" type="github">
   <diagram name="Page-1" id="4GQaYxwLXLBL1G1ahxAC">
     <mxGraphModel dx="810" dy="1547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -54,6 +54,51 @@
         </mxCell>
         <mxCell id="USSTf6IhNfq5ffD1cWFj-22" value="Emplty&lt;div&gt;(Slice)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="681" y="311" width="200" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.4;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="USSTf6IhNfq5ffD1cWFj-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="426" y="180" as="sourcePoint" />
+            <mxPoint x="476" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-25" value="Not Directly Modify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="128" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-26" value="A" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="240" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="USSTf6IhNfq5ffD1cWFj-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="285" as="sourcePoint" />
+            <mxPoint x="470" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="260" as="sourcePoint" />
+            <mxPoint x="580" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-30" value="Fn()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="585" y="243" width="65" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-31" value="Dispatch(Action)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="210" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="645" y="248" as="sourcePoint" />
+            <mxPoint x="755" y="75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-33" value="Cart data will by modify by using function&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="290" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-34" value="Initially slice will be empty" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="880" y="260" width="160" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
