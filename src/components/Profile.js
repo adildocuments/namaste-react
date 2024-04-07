@@ -11,7 +11,6 @@ class Profile extends React.Component {
         }
         async componentDidMount(){
             const profileData = await axios.get('https://api.github.com/users/akshaymarch7')
-            console.log(profileData);
             this.setState({
                 userInfo:profileData.data
             })

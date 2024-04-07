@@ -1,8 +1,8 @@
 const Footer = () =>{
     return (
         <>
-            <div className="footer">
-                <span>copyright</span>
+            <div className=" bg-pink-200 text-center p-5 mt-5">
+                <span>Copyright</span>
             </div>
         </>
     )

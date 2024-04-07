@@ -2,3 +2,4 @@
 # bracket pair colorization toggler
 # eslint
 # better comments
+# tailwind css intelliSense

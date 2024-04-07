@@ -2,3 +2,4 @@
 - proxycors.io
 - reactrouter.com
 - https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+- https://reactrouter.com/en/main/route/lazy

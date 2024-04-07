@@ -19,4 +19,6 @@
 # radix ui
 # mui 
 # tailwind  - postCss
+# lifting state up
+# props drilling
 # ------------------------------------------------

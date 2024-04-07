@@ -22,7 +22,7 @@
 
 # ^ caret when we put the caret before version it will automatically update the minor version not major version example "parcel":"2.8.3" to "parcel":"2.8.4" it is minor changes.
 
-# ~ tilde when we put the tilde before version it will automatically update the major version not th e minor version "parcel":"2.8.3" to "parcel":"3.0.0" it is major changes.
+# ~ tilde when we put the tilde before version it will automatically update the major version not the minor version "parcel":"2.8.3" to "parcel":"3.0.0" it is major changes.
 
 # note:- We should always use caret because if udpate major change in the version may be application crash. if you don't use tilde and caret that will be upgrate automatically it will consider exact verion of the package.
 
