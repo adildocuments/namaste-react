@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T11:06:32.038Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="N9gVh8sYIHJhyscMXAq8" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-07T11:10:09.483Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="50uH7zfO_s_Ep29Wtle8" version="24.0.1" type="github">
   <diagram name="Page-1" id="4GQaYxwLXLBL1G1ahxAC">
     <mxGraphModel dx="810" dy="1547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -139,7 +139,7 @@
         <mxCell id="USSTf6IhNfq5ffD1cWFj-47" value="Function (Reducer)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="455" y="520" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="USSTf6IhNfq5ffD1cWFj-48" value="Redux Store" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-48" value="Redux Store&amp;nbsp;&lt;br&gt;Cart (Slice)&lt;br&gt;array format([])" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="510" width="120" height="250" as="geometry" />
         </mxCell>
         <mxCell id="USSTf6IhNfq5ffD1cWFj-49" value="Cart" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -164,6 +164,31 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="574" y="554" as="sourcePoint" />
             <mxPoint x="667" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.625;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="USSTf6IhNfq5ffD1cWFj-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="102.03999999999996" y="753" as="sourcePoint" />
+            <mxPoint x="681" y="658" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="321" y="863" />
+              <mxPoint x="561" y="793" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-55" value="Header or cart component subscribe the redux store using the selector and header will sync redux store. if any changes in the cart slice&amp;nbsp;&lt;div&gt;in redux store ii will update the cart in the header&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="11" y="823" width="740" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-56" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="USSTf6IhNfq5ffD1cWFj-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="700" as="sourcePoint" />
+            <mxPoint x="370" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="USSTf6IhNfq5ffD1cWFj-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="USSTf6IhNfq5ffD1cWFj-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="611" y="699.5" as="sourcePoint" />
+            <mxPoint x="441" y="699.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
