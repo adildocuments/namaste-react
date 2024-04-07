@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T10:36:40.083Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="6k36quZqPwBqxU-Ugi7g" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-07T10:36:48.670Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ZTbBBbapERPDrIYtwAJ8" version="24.0.1" type="github">
   <diagram name="Page-1" id="4GQaYxwLXLBL1G1ahxAC">
     <mxGraphModel dx="810" dy="1547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -99,9 +99,6 @@
         </mxCell>
         <mxCell id="USSTf6IhNfq5ffD1cWFj-34" value="Initially slice will be empty" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="880" y="260" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="USSTf6IhNfq5ffD1cWFj-35" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="55" y="478" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="USSTf6IhNfq5ffD1cWFj-38" value="Reducer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="585" y="208" width="70" height="30" as="geometry" />
