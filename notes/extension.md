@@ -3,3 +3,4 @@
 # eslint
 # better comments
 # tailwind css intelliSense
+# redux devtool extension for chrome

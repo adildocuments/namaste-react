@@ -21,4 +21,8 @@
 # tailwind  - postCss
 # lifting state up
 # props drilling
+# redux
+# zustand
+# immer library
+# proxy object
 # ------------------------------------------------

@@ -12,6 +12,8 @@ src
         Body.js
         Footer.js
     utils
+        appStore.js (Redux file)
+        cartSlice.js (slice file)
         constants.js
         mockData.js
         UserContext.js (context)
