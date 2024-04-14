@@ -25,4 +25,5 @@
 # zustand
 # immer library
 # proxy object
+# rtk query
 # ------------------------------------------------

@@ -103,9 +103,9 @@ const cartSlice = createSlice({
         }
     }
 })
- const {addItem, removeItem, clearItem} = cartItem.actions;
+ const {addItem, removeItem, clearItem} = cartSlice.actions;
 
- export default cartItem.reducer
+ export default cartSlice.reducer
 
 
 reducers also is an object.
@@ -188,3 +188,5 @@ return newState
 
 
 ### Note:- Behind the scene redux uses the immer library. 
+
+### in the older version of redux we used to middlewares something known as redux thunk instead of rtk query

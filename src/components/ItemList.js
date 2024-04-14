@@ -1,7 +1,16 @@
 import {ITEM_IMAGE_URL} from '../utils/constants.js';
-import noImage from '../assets/images/noImage.png'
+import noImage from '../assets/images/noImage.png';
+import {useDispatch} from 'react-redux';
+import {addItem} from '../utils/cartSlice';
+
+
 
 const ItemList = ({items}) => {
+    const dispatch = useDispatch();
+    const handleAddItem = (item) => {
+        dispatch(addItem(item))
+    }
+
     return (
         <div className="bg-white">
             {
@@ -17,7 +26,7 @@ const ItemList = ({items}) => {
                                 </div>
                             </div>
                             <div className='3/12 relative'>
-                                <button className='absolute bottom-0 left-10 bg-white px-6 py-2 rounded-xl border border-green-300 text-green-600'>Add</button>
+                                <button className='absolute bottom-0 left-10 bg-white px-6 py-2 rounded-xl border border-green-300 text-green-600 cursor-pointer' onClick={()=>handleAddItem(item)}>Add</button>
 
                                 {item?.card?.info?.imageId ?<img className="w-36 aspect-square object-cover rounded-lg" src={`${ITEM_IMAGE_URL}/${item.card.info.imageId}`} />:<img className="w-36 aspect-square object-cover rounded-lg" src={noImage} />}
                                 

@@ -10,7 +10,7 @@ const Card = (props) => {
     const {loggedInUser} = useContext(UserContext)
     return (
         <>
-            <div className=' w-[200px] border p-2 rounded-md m-2 h-full'>
+            <div className='w-[200px] border p-2 rounded-md m-2 h-full'>
                 <div className="image-container">
                     <img src={IMAGE_URL+cloudinaryImageId} alt="" className="w-[100%] aspect-square"/>
                 </div>

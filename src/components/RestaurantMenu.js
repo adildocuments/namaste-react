@@ -35,8 +35,7 @@ const RestaurantMenu = () =>{
                         <RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card} 
                         showItem={index === showIndex && isCollapse}
                         setShowIndexFn = {()=>setShowIndex(index)}
-                        setIsCollapseFn = {(input)=>{console.log(input, 'input') 
-                            setIsCollapse(input)}}
+                        setIsCollapseFn = {(input)=>setIsCollapse(input)}
                         />
                     ))
                 }
