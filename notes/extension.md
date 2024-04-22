@@ -3,4 +3,5 @@
 # eslint
 # better comments
 # tailwind css intelliSense
+# vscode-icons
 # redux devtool extension for chrome

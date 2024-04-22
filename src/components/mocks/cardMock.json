@@ -1,0 +1,94 @@
+{
+  "info": {
+    "id": "10110",
+    "name": "Sita Ram Diwan Chand",
+    "cloudinaryImageId": "ds5pkjzsjsvfxb2xhmsp",
+    "locality": "MD Block",
+    "areaName": "Pitampura",
+    "costForTwo": "₹100 for two",
+    "cuisines": ["North Indian", "Snacks", "Street Food"],
+    "avgRating": 4.3,
+    "veg": true,
+    "parentId": "496926",
+    "avgRatingString": "4.3",
+    "totalRatingsString": "10K+",
+    "sla": {
+      "deliveryTime": 21,
+      "lastMileTravel": 1.6,
+      "serviceability": "SERVICEABLE",
+      "slaString": "20-25 mins",
+      "lastMileTravelString": "1.6 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2024-04-18 19:00:00",
+      "opened": true
+    },
+    "badges": {
+      "imageBadges": [
+        {
+          "imageId": "Rxawards/_CATEGORY-Chole%20Bhature.png",
+          "description": "Delivery!"
+        },
+        {
+          "imageId": "v1695133679/badges/Pure_Veg111.png",
+          "description": "pureveg"
+        }
+      ]
+    },
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "imageBased": {
+          "badgeObject": [
+            {
+              "attributes": {
+                "description": "Delivery!",
+                "imageId": "Rxawards/_CATEGORY-Chole%20Bhature.png"
+              }
+            },
+            {
+              "attributes": {
+                "description": "pureveg",
+                "imageId": "v1695133679/badges/Pure_Veg111.png"
+              }
+            }
+          ]
+        },
+        "textBased": {},
+        "textExtendedBadges": {}
+      }
+    },
+    "aggregatedDiscountInfoV3": {
+      "header": "10% OFF",
+      "subHeader": "UPTO ₹40"
+    },
+    "orderabilityCommunication": {
+      "title": {},
+      "subTitle": {},
+      "message": {},
+      "customIcon": {}
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+  },
+  "analytics": {
+    "context": "seo-data-e4846194-2c82-4062-b74c-09bdc2345969"
+  },
+  "cta": {
+    "link": "https://www.swiggy.com/restaurants/sita-ram-diwan-chand-md-block-pitampura-delhi-10110",
+    "text": "RESTAURANT_MENU",
+    "type": "WEBLINK"
+  },
+  "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}

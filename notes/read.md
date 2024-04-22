@@ -26,4 +26,6 @@
 # immer library
 # proxy object
 # rtk query
+# react testing library
+# Jest library 
 # ------------------------------------------------
